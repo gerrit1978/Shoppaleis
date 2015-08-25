@@ -9,11 +9,16 @@
 /* Import Sass mixins, variables, Compass modules, etc. */
 @import "init";
 
+/* Variables */
+@import "components/variables";
+
 /* HTML element (SMACSS base) rules */
 @import "normalize";
+@import "components/elements";
 
 /* Layout rules */
 @import "layouts/responsive";
+@import "layouts/desktop";
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
@@ -23,3 +28,17 @@
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+
+/* General Styles */
+body {
+	font-family: "Open Sans";
+}
+
+/* Layouts */
+.wrapper 
+{
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}

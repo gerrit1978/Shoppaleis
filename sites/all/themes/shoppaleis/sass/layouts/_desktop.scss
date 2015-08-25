@@ -1,0 +1,78 @@
+@media all and (min-width: 1020px) {
+
+	#header
+	{
+		background: url(../images/header.jpg) no-repeat center top;
+		height: 350px;
+		color: white;
+		a
+		{
+			color: white;
+		}
+		#site-name
+		{
+			text-indent: -999em;
+			overflow: hidden;
+			background: url(../images/logo.png) no-repeat center top;
+			width: 150px;
+			height: 151px;
+			a
+			{
+				display: block;
+				height: 151px;
+			}
+		}
+		.block-main-menu
+		{
+			position: absolute;
+			top: 2em;
+			right: 0;
+			ul.menu
+			{
+				margin: 0;
+				padding: 0;
+				li
+				{
+					list-style: none;
+					display: inline-block;
+					margin-right: 2em;
+					a
+					{
+						font-family: "PT Sans";
+						text-transform: uppercase;
+						text-decoration: none;
+						transition: all 0.1s ease;
+						&:hover
+						{
+							color: $orange;
+							transition: all 0.1s ease;
+						}
+						&.active
+						{
+							color: $orange;
+						}
+					} 
+				}
+			}
+		}
+		.block-header-text
+		{
+			position: relative;
+			top: -2em;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			p
+			{
+				line-height: 1em;
+				font-size: 3.428em;
+				text-transform: uppercase;
+				font-family: "PT Sans Narrow";
+				margin: 0;
+				margin-bottom: 0.2em;
+			}
+		}
+	}
+
+}

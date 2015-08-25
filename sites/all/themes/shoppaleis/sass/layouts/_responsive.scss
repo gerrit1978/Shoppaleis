@@ -34,7 +34,7 @@ $zen-auto-include-item-base: false;
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
@@ -127,7 +127,7 @@ $zen-auto-include-item-base: false;
     /* Start a new row and span all 3 columns. */
     .region-sidebar-second {
       @include zen-grid-item(3, 1);
-      @include zen-nested-container(); // Since we're making every block in this region be a grid item.
+      @include zen-nested-container(); // Since were making every block in this region be a grid item.
       @include zen-clear();
 
       /* Apply the shared properties of grid items in a single, efficient ruleset. */
