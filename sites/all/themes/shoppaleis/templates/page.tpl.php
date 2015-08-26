@@ -55,14 +55,16 @@
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
       <?php print render($page['content_top']); ?>
-      <?php print render($page['content']); ?>
+      <div class="wrapper">
+		<?php print $messages; ?>
+		<?php print render($tabs); ?>
+		<?php print render($page['help']); ?>
+		<?php if ($action_links): ?>
+			<ul class="action-links"><?php print render($action_links); ?></ul>
+		<?php endif; ?>
+      	<?php print render($page['content']); ?>
+      </div>
       <?php print render($page['content_center']); ?>
       <?php print render($page['content_bottom']); ?>
       <?php print $feed_icons; ?>

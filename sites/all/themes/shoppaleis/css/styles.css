@@ -584,7 +584,18 @@ body {
   color: #444444;
 }
 
-/* line 10, ../sass/components/_elements.scss */
+/* line 8, ../sass/components/_elements.scss */
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #8a8a8a;
+  color: #8a8a8a;
+}
+/* line 13, ../sass/components/_elements.scss */
+a:hover {
+  color: #444444;
+  border-bottom-color: #444444;
+}
+/* line 18, ../sass/components/_elements.scss */
 a.knop {
   display: inline-block;
   padding: 5px 20px;
@@ -597,25 +608,25 @@ a.knop {
   border: 2px solid #eb5a34;
   border-radius: 3px;
 }
-/* line 22, ../sass/components/_elements.scss */
+/* line 30, ../sass/components/_elements.scss */
 a.knop:hover {
   color: #eb5a34 !important;
   background: white;
   border: 2px solid #eb5a34;
 }
 
-/* line 31, ../sass/components/_elements.scss */
+/* line 39, ../sass/components/_elements.scss */
 .center {
   text-align: center;
 }
 
-/* line 40, ../sass/components/_elements.scss */
+/* line 48, ../sass/components/_elements.scss */
 h2, h3 {
   font-weight: 600;
   color: #296065;
 }
 
-/* line 46, ../sass/components/_elements.scss */
+/* line 54, ../sass/components/_elements.scss */
 strong {
   color: #296065;
 }
@@ -898,17 +909,18 @@ strong {
   }
 }
 @media all and (min-width: 1020px) {
-  /* line 4, ../sass/layouts/_desktop.scss */
+  /* Header */
+  /* line 5, ../sass/layouts/_desktop.scss */
   #header {
     background: url(../images/header.jpg) no-repeat center top;
     height: 350px;
     color: white;
   }
-  /* line 9, ../sass/layouts/_desktop.scss */
+  /* line 10, ../sass/layouts/_desktop.scss */
   #header a {
     color: white;
   }
-  /* line 13, ../sass/layouts/_desktop.scss */
+  /* line 14, ../sass/layouts/_desktop.scss */
   #header #site-name {
     text-indent: -999em;
     overflow: hidden;
@@ -916,45 +928,46 @@ strong {
     width: 150px;
     height: 151px;
   }
-  /* line 20, ../sass/layouts/_desktop.scss */
+  /* line 21, ../sass/layouts/_desktop.scss */
   #header #site-name a {
     display: block;
     height: 151px;
   }
-  /* line 26, ../sass/layouts/_desktop.scss */
+  /* line 27, ../sass/layouts/_desktop.scss */
   #header .block-main-menu {
     position: absolute;
     top: 2em;
     right: 0;
   }
-  /* line 31, ../sass/layouts/_desktop.scss */
+  /* line 32, ../sass/layouts/_desktop.scss */
   #header .block-main-menu ul.menu {
     margin: 0;
     padding: 0;
   }
-  /* line 35, ../sass/layouts/_desktop.scss */
+  /* line 36, ../sass/layouts/_desktop.scss */
   #header .block-main-menu ul.menu li {
     list-style: none;
     display: inline-block;
     margin-right: 2em;
   }
-  /* line 40, ../sass/layouts/_desktop.scss */
+  /* line 41, ../sass/layouts/_desktop.scss */
   #header .block-main-menu ul.menu li a {
     font-family: "PT Sans";
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.1s ease;
+    border-bottom: none;
   }
-  /* line 46, ../sass/layouts/_desktop.scss */
+  /* line 48, ../sass/layouts/_desktop.scss */
   #header .block-main-menu ul.menu li a:hover {
     color: #eb5a34;
     transition: all 0.1s ease;
   }
-  /* line 51, ../sass/layouts/_desktop.scss */
+  /* line 53, ../sass/layouts/_desktop.scss */
   #header .block-main-menu ul.menu li a.active {
     color: #eb5a34;
   }
-  /* line 59, ../sass/layouts/_desktop.scss */
+  /* line 61, ../sass/layouts/_desktop.scss */
   #header .block-header-text {
     position: relative;
     top: -2em;
@@ -963,7 +976,7 @@ strong {
     margin-right: auto;
     text-align: center;
   }
-  /* line 67, ../sass/layouts/_desktop.scss */
+  /* line 69, ../sass/layouts/_desktop.scss */
   #header .block-header-text p {
     line-height: 1em;
     font-size: 3.428em;
@@ -973,41 +986,42 @@ strong {
     margin-bottom: 0.2em;
   }
 
-  /* line 79, ../sass/layouts/_desktop.scss */
+  /* Main Content */
+  /* line 82, ../sass/layouts/_desktop.scss */
   #content {
     padding: 0;
   }
-  /* line 82, ../sass/layouts/_desktop.scss */
+  /* line 85, ../sass/layouts/_desktop.scss */
   #content .region-content-center {
     background: #fafafa;
   }
-  /* line 87, ../sass/layouts/_desktop.scss */
+  /* line 90, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block {
     clear: both;
   }
-  /* line 92, ../sass/layouts/_desktop.scss */
+  /* line 95, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right img {
     float: left;
     margin-right: 2em;
   }
-  /* line 97, ../sass/layouts/_desktop.scss */
+  /* line 100, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right .text {
     padding-top: 2em;
   }
-  /* line 104, ../sass/layouts/_desktop.scss */
+  /* line 107, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left img {
     float: right;
     margin-left: 2em;
   }
-  /* line 109, ../sass/layouts/_desktop.scss */
+  /* line 112, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left .text {
     padding-top: 2em;
   }
-  /* line 121, ../sass/layouts/_desktop.scss */
+  /* line 124, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom h2 {
     text-align: center;
   }
-  /* line 125, ../sass/layouts/_desktop.scss */
+  /* line 128, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator {
     width: 50%;
     float: left;
@@ -1016,7 +1030,7 @@ strong {
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
   }
-  /* line 133, ../sass/layouts/_desktop.scss */
+  /* line 136, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner {
     position: absolute;
     top: 0;
@@ -1024,14 +1038,14 @@ strong {
     width: 616px;
     height: 266px;
   }
-  /* line 140, ../sass/layouts/_desktop.scss */
+  /* line 143, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .green {
     background: #296065;
     width: 616px;
     height: 266px;
     opacity: 0;
   }
-  /* line 147, ../sass/layouts/_desktop.scss */
+  /* line 150, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text {
     z-index: 10000;
     opacity: 0;
@@ -1048,9 +1062,34 @@ strong {
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 163, ../sass/layouts/_desktop.scss */
+  /* line 166, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a {
     color: white;
+    border-bottom-color: white;
+  }
+  /* line 170, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .text a:hover {
+    color: #eb5a34;
+    border-bottom-color: #eb5a34;
+  }
+
+  /* Footer */
+  /* line 184, ../sass/layouts/_desktop.scss */
+  #footer {
+    background: #eb5a34;
+    margin-top: 20px;
+    color: #ffbda3;
+    text-align: center;
+  }
+  /* line 190, ../sass/layouts/_desktop.scss */
+  #footer a {
+    color: #ffbda3;
+    border-bottom-color: #ffbda3;
+  }
+  /* line 194, ../sass/layouts/_desktop.scss */
+  #footer a:hover {
+    color: white;
+    border-bottom-color: white;
   }
 }
 /* Component (SMACSS module) rules */
@@ -1900,7 +1939,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1398863088');
+  background-image: url('../images/progress.gif?1439734083');
 }
 
 /**
@@ -2005,4 +2044,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+/* Google Map */
+/* line 48, ../sass/styles.scss */
+#map {
+  width: 100%;
+  height: 450px;
 }
