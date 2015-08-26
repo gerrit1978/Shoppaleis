@@ -22,5 +22,19 @@ Drupal.behaviors.my_custom_behavior = {
   }
 };
 
+Drupal.behaviors.organisatoren = 
+{
+	attach: function(context, settings)
+	{
+		$('.block-front-bottom .organisator .inner').hover(function() {
+			$(this).find('.green').animate({opacity: 0.95}, 500);
+			$(this).find('.text').animate({opacity: 1}, 200);							
+		}, function() {
+			$(this).find('.text').animate({opacity: 0});
+			$(this).find('.green').animate({opacity: 0});
+		});
+	}
+}
+
 
 })(jQuery, Drupal, this, this.document);

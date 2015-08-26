@@ -1003,6 +1003,55 @@ strong {
   #content .region-content-center .block-front-center .text-block.text-left .text {
     padding-top: 2em;
   }
+  /* line 121, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom h2 {
+    text-align: center;
+  }
+  /* line 125, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator {
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-family: "PT Sans Narrow";
+    text-transform: uppercase;
+  }
+  /* line 133, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 616px;
+    height: 266px;
+  }
+  /* line 140, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .green {
+    background: #296065;
+    width: 616px;
+    height: 266px;
+    opacity: 0;
+  }
+  /* line 147, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .text {
+    z-index: 10000;
+    opacity: 0;
+    position: absolute;
+    font-size: 1.428em;
+    line-height: 1.4em;
+    height: 266px;
+    top: 30px;
+    right: 30px;
+    padding-left: 30px;
+    text-align: right;
+    color: white;
+    font-family: "PT Sans Narrow";
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  /* line 163, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .text a {
+    color: white;
+  }
 }
 /* Component (SMACSS module) rules */
 /**
