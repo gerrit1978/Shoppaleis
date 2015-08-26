@@ -579,7 +579,12 @@ table {
 }
 
 /* General HTML elements, titles, buttons... */
-/* line 5, ../sass/components/_elements.scss */
+/* line 3, ../sass/components/_elements.scss */
+body {
+  color: #444444;
+}
+
+/* line 10, ../sass/components/_elements.scss */
 a.knop {
   display: inline-block;
   padding: 5px 20px;
@@ -589,12 +594,30 @@ a.knop {
   text-transform: uppercase;
   text-decoration: none;
   transition: all 0.1s ease;
+  border: 2px solid #eb5a34;
   border-radius: 3px;
 }
-/* line 16, ../sass/components/_elements.scss */
+/* line 22, ../sass/components/_elements.scss */
 a.knop:hover {
   color: #eb5a34 !important;
   background: white;
+  border: 2px solid #eb5a34;
+}
+
+/* line 31, ../sass/components/_elements.scss */
+.center {
+  text-align: center;
+}
+
+/* line 40, ../sass/components/_elements.scss */
+h2, h3 {
+  font-weight: 600;
+  color: #296065;
+}
+
+/* line 46, ../sass/components/_elements.scss */
+strong {
+  color: #296065;
 }
 
 /* Layout rules */
@@ -948,6 +971,37 @@ a.knop:hover {
     font-family: "PT Sans Narrow";
     margin: 0;
     margin-bottom: 0.2em;
+  }
+
+  /* line 79, ../sass/layouts/_desktop.scss */
+  #content {
+    padding: 0;
+  }
+  /* line 82, ../sass/layouts/_desktop.scss */
+  #content .region-content-center {
+    background: #fafafa;
+  }
+  /* line 87, ../sass/layouts/_desktop.scss */
+  #content .region-content-center .block-front-center .text-block {
+    clear: both;
+  }
+  /* line 92, ../sass/layouts/_desktop.scss */
+  #content .region-content-center .block-front-center .text-block.text-right img {
+    float: left;
+    margin-right: 2em;
+  }
+  /* line 97, ../sass/layouts/_desktop.scss */
+  #content .region-content-center .block-front-center .text-block.text-right .text {
+    padding-top: 2em;
+  }
+  /* line 104, ../sass/layouts/_desktop.scss */
+  #content .region-content-center .block-front-center .text-block.text-left img {
+    float: right;
+    margin-left: 2em;
+  }
+  /* line 109, ../sass/layouts/_desktop.scss */
+  #content .region-content-center .block-front-center .text-block.text-left .text {
+    padding-top: 2em;
   }
 }
 /* Component (SMACSS module) rules */
@@ -1797,7 +1851,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1439734083');
+  background-image: url('../images/progress.gif?1398863088');
 }
 
 /**

@@ -74,5 +74,47 @@
 			}
 		}
 	}
+	
+	#content
+	{
+		padding: 0;
+		.region-content-center
+		{
+			background: $greyLight;
+			.block-front-center
+			{
+				.text-block
+				{
+					clear: both;
+					&.text-right
+					{
+						img
+						{
+							float: left;
+							margin-right: 2em;
+						}
+						.text
+						{
+							padding-top: 2em;
+						}
+					}
+					&.text-left
+					{
+						img
+						{
+							float: right;
+							margin-left: 2em;
+						}
+						.text
+						{
+							padding-top: 2em;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
 
 }
