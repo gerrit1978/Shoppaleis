@@ -13,14 +13,19 @@
 (function ($, Drupal, window, document, undefined) {
 
 
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
+Drupal.behaviors.headerblock = 
+{
+	attach: function(context, settings)
+	{
+		$('.block-header').animate(
+			{
+				opacity: 1,
+				bottom: '1.75em'
+			}
+		, 400);
+	}
+}
 
-    // Place your code here.
-
-  }
-};
 
 Drupal.behaviors.organisatoren = 
 {

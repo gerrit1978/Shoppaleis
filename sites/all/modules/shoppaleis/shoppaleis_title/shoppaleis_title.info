@@ -1,0 +1,4 @@
+name         = Shoppaleis Title Block
+description  = Provides block with page titles
+core         = 7.x
+package      = Shoppaleis

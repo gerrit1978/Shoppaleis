@@ -1,0 +1,46 @@
+<?php
+
+
+/**
+ * Implements hook_block_info
+ */
+function shoppaleis_title_block_info()
+{
+	$blocks['page_title'] = array(
+		'info' => t('Shoppaleis Page Title'),
+	);
+	
+	return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view
+ */
+function shoppaleis_title_block_view($delta = '')
+{
+	switch ($delta)
+	{
+		case 'page_title':
+			$block = array(
+				'content' => "<div class='inner'>" . _shoppaleis_title_get_title() . "</div>",
+			);
+			break;
+	}
+	
+	return $block;
+}
+
+
+/**
+ * Helper function for defining page title
+ */
+function _shoppaleis_title_get_title()
+{
+	if (arg(0) == 'node' && is_numeric(arg(1)))
+	{
+		$node = node_load(arg(1));
+		$title = $node->title;
+		return $title;
+	}
+}

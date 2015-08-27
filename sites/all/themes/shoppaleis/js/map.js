@@ -1,4 +1,4 @@
-          function showgmaps() {
+function showmap() {
 
   // Create an array of styles.
   var atStyles = [
@@ -182,7 +182,7 @@
             }
         ]
     }
-];
+  ];
   // Create a new StyledMapType object, passing it the array of styles,
   // as well as the name to be displayed on the map type control.
   var atMapType = new google.maps.StyledMapType(atStyles,
@@ -190,8 +190,7 @@
 
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
-  var myLatlng = new google.maps.LatLng(50.8872353,4.6998895
-);
+  var myLatlng = new google.maps.LatLng(50.8872353,4.6998895);
   var mapOptions = {
     zoom: 16,
     center: myLatlng,
@@ -202,18 +201,32 @@
   var map = new google.maps.Map(document.getElementById('map'),
     mapOptions);
 
-var marker = new google.maps.Marker({
+  var contentString = '<div><strong>De Hoorn</strong><br />Sluisstraat 79<br />3000 Leuven</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
     title:"Shoppaleis"
-});
+  });
 
-google.maps.event.addListener(marker, 'click', function() {
-  infowindow.open(map,marker);
-});
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+
+
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
 
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('big', atMapType);
   map.setMapTypeId('big');
-}google.maps.event.addDomListener(window, 'load', showgmaps); 
+}
+
+google.maps.event.addDomListener(window, 'load', showmap); 
