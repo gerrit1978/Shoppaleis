@@ -1160,21 +1160,19 @@ strong {
   /* line 5, ../sass/layouts/_smartphone.scss */
   h1, h2, h3 {
     line-height: 1.1em;
-    margin: 20px 0;
-    margin-top: 0;
   }
 
   /* Header */
-  /* line 13, ../sass/layouts/_smartphone.scss */
+  /* line 11, ../sass/layouts/_smartphone.scss */
   #header {
     padding: 0 !important;
   }
-  /* line 16, ../sass/layouts/_smartphone.scss */
+  /* line 14, ../sass/layouts/_smartphone.scss */
   #header #name-and-slogan {
     width: 100%;
     margin: 20px 0;
   }
-  /* line 19, ../sass/layouts/_smartphone.scss */
+  /* line 17, ../sass/layouts/_smartphone.scss */
   #header #name-and-slogan #site-name {
     text-indent: -999em;
     overflow: hidden;
@@ -1182,12 +1180,12 @@ strong {
     width: 100%;
     height: 150px;
   }
-  /* line 26, ../sass/layouts/_smartphone.scss */
+  /* line 24, ../sass/layouts/_smartphone.scss */
   #header #name-and-slogan #site-name a {
     display: block;
     height: 150px;
   }
-  /* line 37, ../sass/layouts/_smartphone.scss */
+  /* line 35, ../sass/layouts/_smartphone.scss */
   #header .block-main-menu ul.menu {
     margin: 0;
     padding: 0;
@@ -1195,13 +1193,13 @@ strong {
     height: 40px;
     overflow: hidden;
   }
-  /* line 44, ../sass/layouts/_smartphone.scss */
+  /* line 42, ../sass/layouts/_smartphone.scss */
   #header .block-main-menu ul.menu li {
     list-style: none;
     height: 40px;
     line-height: 40px;
   }
-  /* line 49, ../sass/layouts/_smartphone.scss */
+  /* line 47, ../sass/layouts/_smartphone.scss */
   #header .block-main-menu ul.menu li a {
     padding-left: 20px;
     font-family: "PT Sans";
@@ -1212,26 +1210,26 @@ strong {
     border-bottom: none;
     display: block;
   }
-  /* line 59, ../sass/layouts/_smartphone.scss */
+  /* line 57, ../sass/layouts/_smartphone.scss */
   #header .block-main-menu ul.menu li a.active {
     font-weight: 700;
   }
-  /* line 67, ../sass/layouts/_smartphone.scss */
+  /* line 65, ../sass/layouts/_smartphone.scss */
   #header .block-header {
     text-align: center;
     text-transform: uppercase;
   }
-  /* line 71, ../sass/layouts/_smartphone.scss */
+  /* line 69, ../sass/layouts/_smartphone.scss */
   #header .block-header p {
     font-family: "PT Sans Narrow";
     font-size: 2.3em;
     line-height: 1em;
   }
-  /* line 78, ../sass/layouts/_smartphone.scss */
+  /* line 76, ../sass/layouts/_smartphone.scss */
   #header .block-shoppaleis-title {
     margin-bottom: 20px;
   }
-  /* line 81, ../sass/layouts/_smartphone.scss */
+  /* line 79, ../sass/layouts/_smartphone.scss */
   #header .block-shoppaleis-title .inner {
     font-size: 1.3em;
   }
