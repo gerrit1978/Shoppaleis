@@ -65,5 +65,22 @@ Drupal.behaviors.responsiveMenu =
 	}
 }
 
+Drupal.behaviors.scrollMenu =
+{
+	attach: function(context, settings)
+	{
+		$(window).scroll(function() {
+			var offset = $(window).scrollTop();
+			if (offset > 300)
+			{
+				$('#main-menu').addClass('orange');
+			} else
+			{
+				$('#main-menu').removeClass('orange');
+			}
+		});
+	}
+}
+
 
 })(jQuery, Drupal, this, this.document);

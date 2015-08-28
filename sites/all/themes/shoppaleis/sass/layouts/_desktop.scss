@@ -19,57 +19,6 @@
 		{
 			color: white;
 		}
-		#site-name
-		{
-			text-indent: -999em;
-			overflow: hidden;
-			background: url(../images/logo.png) no-repeat center top;
-			width: 150px;
-			height: 151px;
-			a
-			{
-				display: block;
-				height: 151px;
-			}
-		}
-		.block-main-menu
-		{
-			position: absolute;
-			top: 2em;
-			right: 0;
-			ul.menu
-			{
-				margin: 0;
-				padding: 0;
-				li
-				{
-					list-style: none;
-					display: inline-block;
-					margin-right: 2em;
-					a
-					{
-						font-family: "PT Sans";
-						text-transform: uppercase;
-						text-decoration: none;
-						transition: all 0.1s ease;
-						border-bottom: none;
-						&:hover
-						{
-							color: $orange;
-							transition: all 0.1s ease;
-						}
-						&.active
-						{
-							color: $orange;
-						}
-						&.responsive
-						{
-							display: none;
-						}
-					}
-				}
-			}
-		}
 		.block-header
 		{
 			opacity: 0;
@@ -105,6 +54,95 @@
 			}
 		}
 	}
+
+	/* Logo */
+	#site-name
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: -999em;
+		overflow: hidden;
+		z-index: 100;
+		background: url(../images/logo.png) no-repeat center top;
+		width: 150px;
+		height: 151px;
+		a
+		{
+			display: block;
+			height: 151px;
+		}
+	}
+
+	/* Main Menu */
+	#main-menu
+	{
+		position: fixed;
+		top: 0;
+		height: 50px;
+		z-index: 100;
+		width: 100%;
+		&.orange
+		{
+			background: $orange;
+			ul.menu
+			{
+				li
+				{
+					a
+					{
+						&.active, &:hover
+						{
+							color: black;
+						}
+					}
+				}
+			}
+		}
+		ul.menu
+		{
+			text-align: right;
+			margin: 0;
+			padding: 0;
+			height: 50px;
+			line-height: 50px;
+			li
+			{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: inline-block;
+				margin-right: 2em;
+				&.last
+				{
+					margin-right: 0;
+				}
+				a
+				{
+					font-family: "PT Sans";
+					text-transform: uppercase;
+					text-decoration: none;
+					transition: all 0.1s ease;
+					border-bottom: none;
+					color: white;
+					&:hover
+					{
+						color: $orange;
+						transition: all 0.1s ease;
+					}
+					&.active
+					{
+						color: $orange;
+					}
+					&.responsive
+					{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
 	
 	/* Main Content */
 	#content

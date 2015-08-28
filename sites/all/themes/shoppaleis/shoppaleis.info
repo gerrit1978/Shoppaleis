@@ -90,6 +90,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help
+regions[main_menu]		= Main Menu
 regions[content]        = Content
 regions[content_top]    = Content Top
 regions[content_center] = Content Center
