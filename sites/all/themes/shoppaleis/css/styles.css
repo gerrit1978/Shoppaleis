@@ -631,6 +631,41 @@ strong {
   color: #296065;
 }
 
+/* Webforms */
+/* line 62, ../sass/components/_elements.scss */
+.form-item label {
+  font-family: "PT Sans Narrow";
+  text-transform: uppercase;
+  color: #296065;
+  font-weight: 300;
+}
+/* line 69, ../sass/components/_elements.scss */
+.form-item .form-text, .form-item textarea {
+  padding: 2px 10px;
+  width: 100%;
+  border: 1px solid #296065;
+}
+
+/* line 77, ../sass/components/_elements.scss */
+.form-submit {
+  display: inline-block;
+  padding: 5px 20px;
+  background: #eb5a34;
+  color: white;
+  font-size: 0.857em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  border: 2px solid #eb5a34;
+  border-radius: 3px;
+}
+/* line 89, ../sass/components/_elements.scss */
+.form-submit:hover {
+  color: #eb5a34 !important;
+  background: white;
+  border: 2px solid #eb5a34;
+}
+
 /* Layout rules */
 /**
  * @file
@@ -1014,33 +1049,38 @@ strong {
   #content .region-content-center {
     background: #fafafa;
   }
-  /* line 115, ../sass/layouts/_desktop.scss */
+  /* line 112, ../sass/layouts/_desktop.scss */
+  #content .region-content-center h2 {
+    text-align: center;
+    font-size: 1.714em;
+  }
+  /* line 120, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block {
     clear: both;
   }
-  /* line 120, ../sass/layouts/_desktop.scss */
+  /* line 125, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right img {
     float: left;
     margin-right: 2em;
   }
-  /* line 125, ../sass/layouts/_desktop.scss */
+  /* line 130, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right .text {
     padding-top: 2em;
   }
-  /* line 132, ../sass/layouts/_desktop.scss */
+  /* line 137, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left img {
     float: right;
     margin-left: 2em;
   }
-  /* line 137, ../sass/layouts/_desktop.scss */
+  /* line 142, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left .text {
     padding-top: 2em;
   }
-  /* line 149, ../sass/layouts/_desktop.scss */
+  /* line 154, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom h2 {
     text-align: center;
   }
-  /* line 153, ../sass/layouts/_desktop.scss */
+  /* line 158, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator {
     width: 50%;
     float: left;
@@ -1049,7 +1089,7 @@ strong {
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
   }
-  /* line 161, ../sass/layouts/_desktop.scss */
+  /* line 166, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner {
     position: absolute;
     top: 0;
@@ -1057,14 +1097,14 @@ strong {
     width: 616px;
     height: 266px;
   }
-  /* line 168, ../sass/layouts/_desktop.scss */
+  /* line 173, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .green {
     background: #296065;
     width: 616px;
     height: 266px;
     opacity: 0;
   }
-  /* line 175, ../sass/layouts/_desktop.scss */
+  /* line 180, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text {
     z-index: 10000;
     opacity: 0;
@@ -1081,31 +1121,31 @@ strong {
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 191, ../sass/layouts/_desktop.scss */
+  /* line 196, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a {
     color: white;
     border-bottom-color: white;
   }
-  /* line 195, ../sass/layouts/_desktop.scss */
+  /* line 200, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a:hover {
     color: #eb5a34;
     border-bottom-color: #eb5a34;
   }
 
   /* Footer */
-  /* line 209, ../sass/layouts/_desktop.scss */
+  /* line 214, ../sass/layouts/_desktop.scss */
   #footer {
     background: #eb5a34;
     margin-top: 20px;
     color: #ffbda3;
     text-align: center;
   }
-  /* line 215, ../sass/layouts/_desktop.scss */
+  /* line 220, ../sass/layouts/_desktop.scss */
   #footer a {
     color: #ffbda3;
     border-bottom-color: #ffbda3;
   }
-  /* line 219, ../sass/layouts/_desktop.scss */
+  /* line 224, ../sass/layouts/_desktop.scss */
   #footer a:hover {
     color: white;
     border-bottom-color: white;

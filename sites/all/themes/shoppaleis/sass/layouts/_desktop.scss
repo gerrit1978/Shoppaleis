@@ -108,6 +108,11 @@
 		padding: 0;
 		.region-content-center
 		{
+			h2
+			{
+				text-align: center;
+				font-size: 1.714em;
+			}
 			background: $greyLight;
 			.block-front-center
 			{

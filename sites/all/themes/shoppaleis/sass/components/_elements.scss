@@ -54,3 +54,41 @@ strong
 {
 	color: $green;
 }
+
+/* Webforms */
+.form-item
+{
+	label
+	{
+		font-family: "PT Sans Narrow";
+		text-transform: uppercase;
+		color: $green;
+		font-weight: 300;
+	}
+	.form-text, textarea
+	{
+		padding: 2px 10px;
+		width: 100%;
+		border: 1px solid $green;
+	}
+}
+
+.form-submit
+{
+	display: inline-block;
+	padding: 5px 20px;
+	background: $orange;
+	color: white;
+	font-size: 0.857em;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.1s ease;
+	border: 2px solid $orange;
+	border-radius: 3px;
+	&:hover
+	{
+		color: $orange !important;
+		background: white;
+		border: 2px solid $orange;
+	}
+}
