@@ -42,4 +42,24 @@ Drupal.behaviors.organisatoren =
 }
 
 
+Drupal.behaviors.responsiveMenu =
+{
+	attach: function(context, settings)
+	{
+		$('ul.menu a.responsive').click(function(e) {
+			var height = $('#block-system-main-menu ul.menu').css('height');
+			if (height == '40' || height == '40px')
+			{
+				$('#block-system-main-menu ul.menu').css('height', 'auto');
+			} else
+			{
+				$('#block-system-main-menu ul.menu').css('height', '40');
+			}
+			e.preventDefault();
+			return false;
+		});
+	}
+}
+
+
 })(jQuery, Drupal, this, this.document);

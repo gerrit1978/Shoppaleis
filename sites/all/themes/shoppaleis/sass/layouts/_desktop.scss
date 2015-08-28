@@ -62,7 +62,11 @@
 						{
 							color: $orange;
 						}
-					} 
+						&.responsive
+						{
+							display: none;
+						}
+					}
 				}
 			}
 		}

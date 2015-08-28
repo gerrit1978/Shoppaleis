@@ -1,0 +1,71 @@
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+	/* Titles */
+	h1, h2, h3
+	{
+		line-height: 1.1em;
+	}
+
+	/* Header */
+	#header
+	{
+		#name-and-slogan
+		{
+			width: 100%;
+			#site-name
+			{
+				text-indent: -999em;
+				overflow: hidden;
+				background: url(../images/logo_responsive.png) no-repeat center top;
+				width: 100%;
+				height: 200px;
+				a
+				{
+					display: block;
+					height: 200px;
+				}
+			}
+		
+		}
+		.block-main-menu
+		{
+			ul.menu
+			{
+				margin: 0;
+				padding: 0;
+				background: url(../images/menu.png) no-repeat right top;
+				height: 40px;
+				overflow: hidden;
+				li
+				{
+					list-style: none;
+					height: 40px;
+					line-height: 40px;
+					padding-left: 10px;
+					a
+					{
+						font-family: "PT Sans";
+						font-weight: 700;
+						color: $green;
+						text-transform: uppercase;
+						text-decoration: none;
+						border-bottom: none;
+						display: block;
+					}
+				}
+			}
+		}
+		.block-header
+		{
+			text-align: center;
+			text-transform: uppercase;
+			p
+			{	
+				font-family: "PT Sans Narrow";
+				font-size: 2.3em;
+				line-height: 1em;
+			}
+		}
+		
+	}
+}
