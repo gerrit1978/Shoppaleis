@@ -183,6 +183,8 @@ function showmap() {
         ]
     }
   ];
+  
+  /** SHOPPALEIS LEUVEN **/
   // Create a new StyledMapType object, passing it the array of styles,
   // as well as the name to be displayed on the map type control.
   var atMapType = new google.maps.StyledMapType(atStyles,
@@ -198,7 +200,7 @@ function showmap() {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'big']
     }
   };
-  var map = new google.maps.Map(document.getElementById('map'),
+  var map = new google.maps.Map(document.getElementById('map_leuven'),
     mapOptions);
 
   var contentString = '<div><strong>De Hoorn</strong><br />Sluisstraat 79<br />3000 Leuven</div>';
@@ -213,12 +215,6 @@ function showmap() {
     title:"Shoppaleis"
   });
 
-
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
-  });
-
-
   google.maps.event.addListener(marker, 'click', function() {
     infowindow.open(map,marker);
   });
@@ -227,6 +223,43 @@ function showmap() {
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('big', atMapType);
   map.setMapTypeId('big');
+  
+  
+  /** SHOPPALEIS KORTENBERG **/
+  var myLatlngKortenberg = new google.maps.LatLng(50.8857185,4.5478113);
+  var mapOptionsKortenberg = {
+    zoom: 16,
+    center: myLatlngKortenberg,
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'big']
+    }
+  };
+  var mapKortenberg = new google.maps.Map(document.getElementById('map_kortenberg'),
+    mapOptionsKortenberg);
+
+  var contentStringKortenberg = '<div><strong>Oude Abdij</strong><br />Abdijdreef 22<br />3070 Kortenberg</div>';
+
+  var infowindowKortenberg = new google.maps.InfoWindow({
+    content: contentStringKortenberg
+  });
+  
+  var markerKortenberg = new google.maps.Marker({
+    position: myLatlngKortenberg,
+    map: mapKortenberg,
+    title:"Shoppaleis"
+  });
+
+  google.maps.event.addListener(markerKortenberg, 'click', function() {
+    infowindowKortenberg.open(mapKortenberg,markerKortenberg);
+  });
+  
+
+
+  //Associate the styled map with the MapTypeId and set it to display.
+  mapKortenberg.mapTypes.set('big', atMapType);
+  mapKortenberg.setMapTypeId('big');
+
+  
 }
 
 google.maps.event.addDomListener(window, 'load', showmap); 

@@ -37,10 +37,17 @@ function shoppaleis_title_block_view($delta = '')
  */
 function _shoppaleis_title_get_title()
 {
+
+	if (arg(0) == 'standhouders')
+	{
+		$title = "Standhouders";
+	}
+
 	if (arg(0) == 'node' && is_numeric(arg(1)))
 	{
 		$node = node_load(arg(1));
 		$title = $node->title;
-		return $title;
 	}
+
+	return $title;	
 }
