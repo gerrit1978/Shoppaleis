@@ -38,6 +38,8 @@ function shoppaleis_title_block_view($delta = '')
 function _shoppaleis_title_get_title()
 {
 
+	$title = "";
+
 	if (arg(0) == 'standhouders')
 	{
 		$title = "Standhouders";
