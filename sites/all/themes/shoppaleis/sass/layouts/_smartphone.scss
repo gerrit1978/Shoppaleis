@@ -4,11 +4,14 @@
 	h1, h2, h3
 	{
 		line-height: 1.1em;
+		margin: 20px 0;
+		margin-top: 0;
 	}
 
 	/* Header */
 	#header
 	{
+		padding: 0 !important;
 		#name-and-slogan
 		{
 			width: 100%;
@@ -18,13 +21,14 @@
 				overflow: hidden;
 				background: url(../images/logo_responsive.png) no-repeat center top;
 				width: 100%;
-				height: 200px;
+				height: 150px;
 				a
 				{
 					display: block;
-					height: 200px;
+					height: 150px;
 				}
 			}
+			margin: 20px 0;
 		
 		}
 		.block-main-menu
@@ -33,7 +37,7 @@
 			{
 				margin: 0;
 				padding: 0;
-				background: url(../images/menu.png) no-repeat right top;
+				background: $orange url(../images/menu.png) no-repeat right top;
 				height: 40px;
 				overflow: hidden;
 				li
@@ -41,16 +45,20 @@
 					list-style: none;
 					height: 40px;
 					line-height: 40px;
-					padding-left: 10px;
 					a
 					{
+						padding-left: 20px;
 						font-family: "PT Sans";
-						font-weight: 700;
-						color: $green;
+						font-weight: 300;
+						color: white;
 						text-transform: uppercase;
 						text-decoration: none;
 						border-bottom: none;
 						display: block;
+						&.active
+						{
+							font-weight: 700;
+						}
 					}
 				}
 			}
@@ -64,6 +72,14 @@
 				font-family: "PT Sans Narrow";
 				font-size: 2.3em;
 				line-height: 1em;
+			}
+		}
+		.block-shoppaleis-title
+		{
+			margin-bottom: 20px;
+			.inner
+			{
+				font-size: 1.3em;
 			}
 		}
 		

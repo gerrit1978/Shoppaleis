@@ -17,12 +17,16 @@ Drupal.behaviors.headerblock =
 {
 	attach: function(context, settings)
 	{
-		$('.block-header').animate(
-			{
-				opacity: 1,
-				bottom: '1.75em'
-			}
-		, 400);
+		var width = $(window).width();
+		if (width > 1020)
+		{
+			$('.block-header').animate(
+				{
+					opacity: 1,
+					bottom: '1.75em'
+				}
+			, 400);
+		} 
 	}
 }
 
