@@ -194,6 +194,7 @@ function showmap() {
   // to the map type control.
   var myLatlng = new google.maps.LatLng(50.8872353,4.6998895);
   var mapOptions = {
+	scrollwheel: false,  
     zoom: 16,
     center: myLatlng,
     mapTypeControlOptions: {
@@ -228,6 +229,7 @@ function showmap() {
   /** SHOPPALEIS KORTENBERG **/
   var myLatlngKortenberg = new google.maps.LatLng(50.8857185,4.5478113);
   var mapOptionsKortenberg = {
+	scrollwheel: false,  
     zoom: 16,
     center: myLatlngKortenberg,
     mapTypeControlOptions: {
