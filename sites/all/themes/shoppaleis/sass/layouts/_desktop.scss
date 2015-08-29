@@ -91,9 +91,10 @@
 				{
 					a
 					{
+						color: $orangeLight;
 						&.active, &:hover
 						{
-							color: black;
+							color: white;
 						}
 					}
 				}

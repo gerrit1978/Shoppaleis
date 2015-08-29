@@ -1025,11 +1025,15 @@ strong {
   #main-menu.orange {
     background: #eb5a34;
   }
-  /* line 95, ../sass/layouts/_desktop.scss */
-  #main-menu.orange ul.menu li a.active, #main-menu.orange ul.menu li a:hover {
-    color: black;
+  /* line 93, ../sass/layouts/_desktop.scss */
+  #main-menu.orange ul.menu li a {
+    color: #ffbda3;
   }
-  /* line 103, ../sass/layouts/_desktop.scss */
+  /* line 96, ../sass/layouts/_desktop.scss */
+  #main-menu.orange ul.menu li a.active, #main-menu.orange ul.menu li a:hover {
+    color: white;
+  }
+  /* line 104, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu {
     text-align: right;
     margin: 0;
@@ -1037,7 +1041,7 @@ strong {
     height: 50px;
     line-height: 50px;
   }
-  /* line 110, ../sass/layouts/_desktop.scss */
+  /* line 111, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li {
     margin: 0;
     padding: 0;
@@ -1045,11 +1049,11 @@ strong {
     display: inline-block;
     margin-right: 2em;
   }
-  /* line 117, ../sass/layouts/_desktop.scss */
+  /* line 118, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li.last {
     margin-right: 0;
   }
-  /* line 121, ../sass/layouts/_desktop.scss */
+  /* line 122, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li a {
     font-family: "PT Sans";
     text-transform: uppercase;
@@ -1058,61 +1062,61 @@ strong {
     border-bottom: none;
     color: white;
   }
-  /* line 129, ../sass/layouts/_desktop.scss */
+  /* line 130, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li a:hover {
     color: #eb5a34;
     transition: all 0.1s ease;
   }
-  /* line 134, ../sass/layouts/_desktop.scss */
+  /* line 135, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li a.active {
     color: #eb5a34;
   }
-  /* line 138, ../sass/layouts/_desktop.scss */
+  /* line 139, ../sass/layouts/_desktop.scss */
   #main-menu ul.menu li a.responsive {
     display: none;
   }
 
   /* Main Content */
-  /* line 149, ../sass/layouts/_desktop.scss */
+  /* line 150, ../sass/layouts/_desktop.scss */
   #content {
     padding: 0;
   }
-  /* line 152, ../sass/layouts/_desktop.scss */
+  /* line 153, ../sass/layouts/_desktop.scss */
   #content .region-content-center {
     background: #fafafa;
   }
-  /* line 154, ../sass/layouts/_desktop.scss */
+  /* line 155, ../sass/layouts/_desktop.scss */
   #content .region-content-center h2 {
     text-align: center;
     font-size: 1.714em;
   }
-  /* line 162, ../sass/layouts/_desktop.scss */
+  /* line 163, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block {
     clear: both;
   }
-  /* line 167, ../sass/layouts/_desktop.scss */
+  /* line 168, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right img {
     float: left;
     margin-right: 2em;
   }
-  /* line 172, ../sass/layouts/_desktop.scss */
+  /* line 173, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-right .text {
     padding-top: 2em;
   }
-  /* line 179, ../sass/layouts/_desktop.scss */
+  /* line 180, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left img {
     float: right;
     margin-left: 2em;
   }
-  /* line 184, ../sass/layouts/_desktop.scss */
+  /* line 185, ../sass/layouts/_desktop.scss */
   #content .region-content-center .block-front-center .text-block.text-left .text {
     padding-top: 2em;
   }
-  /* line 196, ../sass/layouts/_desktop.scss */
+  /* line 197, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom h2 {
     text-align: center;
   }
-  /* line 200, ../sass/layouts/_desktop.scss */
+  /* line 201, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator {
     width: 50%;
     float: left;
@@ -1121,7 +1125,7 @@ strong {
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
   }
-  /* line 208, ../sass/layouts/_desktop.scss */
+  /* line 209, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner {
     position: absolute;
     top: 0;
@@ -1129,14 +1133,14 @@ strong {
     width: 616px;
     height: 266px;
   }
-  /* line 215, ../sass/layouts/_desktop.scss */
+  /* line 216, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .green {
     background: #296065;
     width: 616px;
     height: 266px;
     opacity: 0;
   }
-  /* line 222, ../sass/layouts/_desktop.scss */
+  /* line 223, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text {
     z-index: 10000;
     opacity: 0;
@@ -1153,31 +1157,31 @@ strong {
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 238, ../sass/layouts/_desktop.scss */
+  /* line 239, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a {
     color: white;
     border-bottom-color: white;
   }
-  /* line 242, ../sass/layouts/_desktop.scss */
+  /* line 243, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a:hover {
     color: #eb5a34;
     border-bottom-color: #eb5a34;
   }
 
   /* Footer */
-  /* line 256, ../sass/layouts/_desktop.scss */
+  /* line 257, ../sass/layouts/_desktop.scss */
   #footer {
     background: #eb5a34;
     margin-top: 20px;
     color: #ffbda3;
     text-align: center;
   }
-  /* line 262, ../sass/layouts/_desktop.scss */
+  /* line 263, ../sass/layouts/_desktop.scss */
   #footer a {
     color: #ffbda3;
     border-bottom-color: #ffbda3;
   }
-  /* line 266, ../sass/layouts/_desktop.scss */
+  /* line 267, ../sass/layouts/_desktop.scss */
   #footer a:hover {
     color: white;
     border-bottom-color: white;
