@@ -82,5 +82,19 @@ Drupal.behaviors.scrollMenu =
 	}
 }
 
+Drupal.behaviors.footerHeight = 
+{
+	attach: function(context, settings)
+	{
+		var viewport = $(window).height();
+		var body = $('body').height();
+		if (body < viewport)
+		{
+			var main = viewport - 490;
+			$('#main').css('height', main);
+		}
+	}
+}
+
 
 })(jQuery, Drupal, this, this.document);
