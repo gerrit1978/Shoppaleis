@@ -87,4 +87,24 @@
 		}
 	}
 
+	/* Webforms */
+	/* Dirty hack for progressbar */
+	.webform-client-form
+	{
+		.webform-progressbar
+		{
+			display: none;
+		}
+		.form-actions
+		{
+			.form-submit
+			{
+				width: 100%;
+				&.webform-previous
+				{
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
 }

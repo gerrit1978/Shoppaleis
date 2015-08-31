@@ -251,6 +251,36 @@
 			}
 		}
 	}
+
+	/* Webforms */
+	/* Dirty hack for progressbar */
+	.webform-client-form
+	{
+		.webform-progressbar
+		{
+			margin-bottom: 60px;
+			.webform-progressbar-page 
+			{
+				&.current
+				{
+					.webform-progressbar-page-label
+					{
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		.form-actions
+		{
+			.form-submit
+			{
+				&.webform-previous
+				{
+					margin-right: 20px;
+				}
+			}
+		}
+	}
 	
 	/* Footer */
 	#footer
