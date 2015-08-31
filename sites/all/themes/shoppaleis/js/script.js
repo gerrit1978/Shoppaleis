@@ -36,11 +36,11 @@ Drupal.behaviors.organisatoren =
 	attach: function(context, settings)
 	{
 		$('.block-front-bottom .organisator .inner').hover(function() {
-			$(this).find('.green').animate({opacity: 0.95}, 500);
-			$(this).find('.text').animate({opacity: 1}, 200);							
+			$(this).find('.green').stop().animate({opacity: 0.95}, 500);
+			$(this).find('.text').stop().animate({opacity: 1}, 200);							
 		}, function() {
-			$(this).find('.text').animate({opacity: 0});
-			$(this).find('.green').animate({opacity: 0});
+			$(this).find('.text').stop().animate({opacity: 0});
+			$(this).find('.green').stop().animate({opacity: 0});
 		});
 	}
 }
