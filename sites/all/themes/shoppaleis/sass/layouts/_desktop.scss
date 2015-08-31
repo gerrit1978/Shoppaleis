@@ -252,6 +252,20 @@
 		}
 	}
 
+	/* Front page text */
+	body.front
+	{
+		.field-name-body
+		{
+			margin-bottom: 3em;
+			p
+			{
+				font-size: 1.6em;
+				line-height: 1.2;
+			}
+		}
+	}
+
 	/* Webforms */
 	/* Dirty hack for progressbar */
 	.webform-client-form
