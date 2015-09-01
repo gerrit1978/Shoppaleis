@@ -1275,6 +1275,52 @@ strong {
     height: 450px !important;
   }
 }
+/* Tablet in landscape */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  /* line 5, ../sass/layouts/_tablet.scss */
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  /* Gallery "Voorbije edities" */
+  /* line 17, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images {
+    margin-top: 20px;
+  }
+  /* line 20, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul {
+    margin-left: -23px;
+  }
+  /* line 23, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li {
+    margin-left: 23px;
+  }
+
+  /* Organisatoren */
+  /* line 41, ../sass/layouts/_tablet.scss */
+  #content .region-content-bottom .block-front-bottom .organisator {
+    width: 50%;
+    display: inline-block;
+    margin-right: 0;
+  }
+  /* line 46, ../sass/layouts/_tablet.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner {
+    width: 100%;
+    height: 218px;
+  }
+  /* line 50, ../sass/layouts/_tablet.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .green {
+    width: 100%;
+    height: 218px;
+  }
+  /* line 55, ../sass/layouts/_tablet.scss */
+  #content .region-content-bottom .block-front-bottom .organisator .inner .text {
+    font-size: 1em;
+    line-height: 1.4em;
+    height: 218px;
+  }
+}
+/* Tablet in portrait */
 @media all and (min-width: 320px) and (max-width: 767px) {
   /* Titles */
   /* line 5, ../sass/layouts/_smartphone.scss */
@@ -2368,13 +2414,13 @@ tr.selected td {
 /* @import "theme-A"; */
 /* @import "theme-B"; */
 /* General Styles */
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 body {
   font-family: "Open Sans";
 }
 
 /* Layouts */
-/* line 40, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 .wrapper {
   max-width: 1250px;
   margin-left: auto;
@@ -2383,14 +2429,14 @@ body {
 }
 
 /* Google Map */
-/* line 49, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 #map, #map_leuven, #map_kortenberg {
   width: 100%;
   height: 250px;
 }
 
 /* Lightbox */
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 #lightbox a {
   border: none !important;
 }
