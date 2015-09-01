@@ -1118,14 +1118,19 @@ strong {
   }
   /* line 201, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator {
-    width: 50%;
+    width: 616px;
     float: left;
     position: relative;
+    margin-right: 18px;
     text-align: center;
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
   }
-  /* line 209, ../sass/layouts/_desktop.scss */
+  /* line 210, ../sass/layouts/_desktop.scss */
+  #content .region-content-bottom .block-front-bottom .organisator.last {
+    margin-right: 0;
+  }
+  /* line 214, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner {
     position: absolute;
     top: 0;
@@ -1133,14 +1138,14 @@ strong {
     width: 616px;
     height: 266px;
   }
-  /* line 216, ../sass/layouts/_desktop.scss */
+  /* line 221, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .green {
     background: #296065;
     width: 616px;
     height: 266px;
     opacity: 0;
   }
-  /* line 223, ../sass/layouts/_desktop.scss */
+  /* line 228, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text {
     z-index: 10000;
     opacity: 0;
@@ -1157,23 +1162,23 @@ strong {
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 239, ../sass/layouts/_desktop.scss */
+  /* line 244, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a {
     color: white;
     border-bottom-color: white;
   }
-  /* line 243, ../sass/layouts/_desktop.scss */
+  /* line 248, ../sass/layouts/_desktop.scss */
   #content .region-content-bottom .block-front-bottom .organisator .inner .text a:hover {
     color: #eb5a34;
     border-bottom-color: #eb5a34;
   }
 
   /* Front page text */
-  /* line 259, ../sass/layouts/_desktop.scss */
+  /* line 265, ../sass/layouts/_desktop.scss */
   body.front .field-name-body {
     margin-bottom: 3em;
   }
-  /* line 262, ../sass/layouts/_desktop.scss */
+  /* line 268, ../sass/layouts/_desktop.scss */
   body.front .field-name-body p {
     font-size: 1.6em;
     line-height: 1.2;
@@ -1181,40 +1186,90 @@ strong {
 
   /* Webforms */
   /* Dirty hack for progressbar */
-  /* line 274, ../sass/layouts/_desktop.scss */
+  /* line 280, ../sass/layouts/_desktop.scss */
   .webform-client-form .webform-progressbar {
     margin-bottom: 60px;
   }
-  /* line 281, ../sass/layouts/_desktop.scss */
+  /* line 287, ../sass/layouts/_desktop.scss */
   .webform-client-form .webform-progressbar .webform-progressbar-page.current .webform-progressbar-page-label {
     font-weight: 700;
   }
-  /* line 292, ../sass/layouts/_desktop.scss */
+  /* line 298, ../sass/layouts/_desktop.scss */
   .webform-client-form .form-actions .form-submit.webform-previous {
     margin-right: 20px;
   }
 
+  /* Gallery "Voorbije edities" */
+  /* line 309, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 313, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie {
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 319, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie h2 {
+    margin-bottom: 0;
+  }
+  /* line 323, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie h6 {
+    margin: 0;
+    color: #eb5a34;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  /* line 330, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images {
+    margin-top: 20px;
+  }
+  /* line 333, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul {
+    margin: 0;
+    margin-left: -20px;
+    padding: 0;
+  }
+  /* line 338, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 346, ../sass/layouts/_desktop.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li a {
+    display: block;
+    height: 230px;
+    border: none;
+  }
+
   /* Footer */
-  /* line 301, ../sass/layouts/_desktop.scss */
+  /* line 362, ../sass/layouts/_desktop.scss */
   #footer {
     background: #eb5a34;
     margin-top: 20px;
     color: #ffbda3;
     text-align: center;
   }
-  /* line 307, ../sass/layouts/_desktop.scss */
+  /* line 368, ../sass/layouts/_desktop.scss */
   #footer a {
     color: #ffbda3;
     border-bottom-color: #ffbda3;
   }
-  /* line 311, ../sass/layouts/_desktop.scss */
+  /* line 372, ../sass/layouts/_desktop.scss */
   #footer a:hover {
     color: white;
     border-bottom-color: white;
   }
 
   /* Google Map */
-  /* line 321, ../sass/layouts/_desktop.scss */
+  /* line 382, ../sass/layouts/_desktop.scss */
   #map, #map_leuven, #map_kortenberg {
     width: 100%;
     height: 450px !important;
@@ -1316,6 +1371,58 @@ strong {
   /* line 104, ../sass/layouts/_smartphone.scss */
   .webform-client-form .form-actions .form-submit.webform-previous {
     margin-bottom: 20px;
+  }
+
+  /* Gallery "Voorbije edities" */
+  /* line 115, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 119, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie {
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 125, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie h2 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  /* line 130, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie h6 {
+    margin: 0;
+    color: #eb5a34;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  /* line 137, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images {
+    margin-top: 20px;
+  }
+  /* line 140, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 144, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  /* line 151, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li img {
+    width: 100%;
+  }
+  /* line 155, ../sass/layouts/_smartphone.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li a {
+    display: block;
+    border: none;
   }
 }
 /* Component (SMACSS module) rules */
@@ -2277,4 +2384,10 @@ body {
 #map, #map_leuven, #map_kortenberg {
   width: 100%;
   height: 250px;
+}
+
+/* Lightbox */
+/* line 58, ../sass/styles.scss */
+#lightbox a {
+  border: none !important;
 }

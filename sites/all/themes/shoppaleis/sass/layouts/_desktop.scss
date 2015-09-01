@@ -199,12 +199,17 @@
 				}
 				.organisator
 				{
-					width: 50%;
+					width: 616px;
 					float: left;
 					position: relative;
+					margin-right: 18px;
 					text-align: center;
 					font-family: "PT Sans Narrow";
 					text-transform: uppercase;
+					&.last
+					{
+						margin-right: 0;
+					}
 					.inner 
 					{
 						position: absolute;
@@ -245,7 +250,8 @@
 									border-bottom-color: $orange;
 								}
 							}
-						}				
+						}
+										
 					}
 				}
 			}
@@ -296,6 +302,61 @@
 		}
 	}
 	
+	/* Gallery "Voorbije edities" */
+	.view-edities
+	{
+		ul.edities
+		{
+			margin: 0;
+			padding: 0;
+			li.editie
+			{
+				margin: 0;
+				margin-bottom: 3em;
+				padding: 0;
+				list-style: none;
+				h2
+				{
+					margin-bottom: 0;
+				}
+				h6
+				{
+					margin: 0;
+					color: $orange;
+					font-size: 0.9em;
+					font-weight: 600;
+				}
+				.views-field-field-editie-images
+				{
+					margin-top: 20px;
+					ul
+					{
+						margin: 0;
+						margin-left: -20px;
+						padding: 0;
+						li
+						{
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							display: inline-block;
+							margin-left: 20px;
+							margin-bottom: 20px;
+							a
+							{
+								display: block;
+								height: 230px;
+								border: none;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+	
+	
 	/* Footer */
 	#footer
 	{
@@ -322,7 +383,4 @@
 		width: 100%;
 		height: 450px !important;
 	}
-
-
-
 }
