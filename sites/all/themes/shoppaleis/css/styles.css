@@ -1406,20 +1406,23 @@ strong {
   .view-edities ul.edities li.editie .views-field-field-editie-images ul {
     margin: 0;
     padding: 0;
+    margin-left: -2%;
   }
-  /* line 144, ../sass/layouts/_smartphone.scss */
+  /* line 145, ../sass/layouts/_smartphone.scss */
   .view-edities ul.edities li.editie .views-field-field-editie-images ul li {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    display: inline-block;
     list-style: none;
-    margin-bottom: 20px;
   }
-  /* line 151, ../sass/layouts/_smartphone.scss */
+  /* line 154, ../sass/layouts/_smartphone.scss */
   .view-edities ul.edities li.editie .views-field-field-editie-images ul li img {
     width: 100%;
   }
-  /* line 155, ../sass/layouts/_smartphone.scss */
+  /* line 158, ../sass/layouts/_smartphone.scss */
   .view-edities ul.edities li.editie .views-field-field-editie-images ul li a {
     display: block;
     border: none;
