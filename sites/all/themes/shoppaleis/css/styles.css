@@ -1276,7 +1276,7 @@ strong {
   }
 }
 /* Tablet in landscape */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 1020px) and (max-width: 1024px) {
   /* line 5, ../sass/layouts/_tablet.scss */
   .wrapper {
     padding: 0 10px;
@@ -1321,6 +1321,213 @@ strong {
   }
 }
 /* Tablet in portrait */
+@media all and (min-width: 768px) and (max-width: 1019px) {
+  /* Logo */
+  /* line 76, ../sass/layouts/_tablet.scss */
+  #name-and-slogan {
+    width: 100%;
+    margin: 20px 0;
+  }
+  /* line 79, ../sass/layouts/_tablet.scss */
+  #name-and-slogan #site-name {
+    text-indent: -999em;
+    overflow: hidden;
+    background: url(../images/logo_responsive.png) no-repeat center top;
+    width: 100%;
+    height: 150px;
+  }
+  /* line 86, ../sass/layouts/_tablet.scss */
+  #name-and-slogan #site-name a {
+    display: block;
+    height: 150px;
+  }
+
+  /* line 97, ../sass/layouts/_tablet.scss */
+  #header
+  .block {
+    margin-bottom: 0;
+  }
+
+  /* line 101, ../sass/layouts/_tablet.scss */
+  .block-header {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  /* line 105, ../sass/layouts/_tablet.scss */
+  .block-header p {
+    font-family: "PT Sans Narrow";
+    font-size: 2.3em;
+    line-height: 1em;
+  }
+
+  /* line 112, ../sass/layouts/_tablet.scss */
+  .block-shoppaleis-title {
+    margin-bottom: 20px;
+  }
+  /* line 115, ../sass/layouts/_tablet.scss */
+  .block-shoppaleis-title .inner {
+    font-size: 1.3em;
+  }
+
+  /* line 122, ../sass/layouts/_tablet.scss */
+  #main {
+    padding-top: 0 !important;
+  }
+  /* line 127, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center {
+    background: #fafafa;
+  }
+  /* line 129, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center h2 {
+    text-align: center;
+    font-size: 1.714em;
+  }
+  /* line 137, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center .block-front-center .text-block {
+    clear: both;
+  }
+  /* line 142, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center .block-front-center .text-block.text-right img {
+    width: 50%;
+    float: left;
+  }
+  /* line 147, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center .block-front-center .text-block.text-right .text {
+    margin-left: 55%;
+  }
+  /* line 154, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center .block-front-center .text-block.text-left img {
+    width: 50%;
+    float: right;
+  }
+  /* line 159, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-center .block-front-center .text-block.text-left .text {
+    margin-right: 55%;
+  }
+  /* line 171, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-bottom .block-front-bottom .organisator {
+    width: 100%;
+    display: inline-block;
+    margin-right: 0;
+  }
+  /* line 176, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-bottom .block-front-bottom .organisator img {
+    width: 100%;
+  }
+  /* line 180, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-bottom .block-front-bottom .organisator .inner {
+    width: 100%;
+  }
+  /* line 183, ../sass/layouts/_tablet.scss */
+  #main #content .region-content-bottom .block-front-bottom .organisator .inner .text {
+    font-size: 1em;
+    line-height: 1.4em;
+  }
+
+  /* The Menu */
+  /* line 199, ../sass/layouts/_tablet.scss */
+  #main-menu {
+    background: #eb5a34;
+  }
+  /* line 202, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu {
+    height: 50px;
+    line-height: 50px;
+  }
+  /* line 206, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 2em;
+  }
+  /* line 211, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li.last {
+    margin-right: 0;
+  }
+  /* line 215, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li a {
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    border-bottom: none;
+    color: #ffbda3;
+  }
+  /* line 223, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li a:hover {
+    color: white;
+    transition: all 0.1s ease;
+  }
+  /* line 228, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li a.active {
+    color: white;
+  }
+  /* line 232, ../sass/layouts/_tablet.scss */
+  #main-menu ul.menu li a.responsive {
+    display: none;
+  }
+
+  /* Gallery "Voorbije edities" */
+  /* line 244, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 248, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie {
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 254, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie h2 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  /* line 259, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie h6 {
+    margin: 0;
+    color: #eb5a34;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  /* line 266, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images {
+    margin-top: 20px;
+  }
+  /* line 269, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 273, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    display: inline-block;
+    list-style: none;
+  }
+  /* line 282, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li img {
+    width: 100%;
+  }
+  /* line 286, ../sass/layouts/_tablet.scss */
+  .view-edities ul.edities li.editie .views-field-field-editie-images ul li a {
+    display: block;
+    border: none;
+  }
+
+  /* Contact form */
+  /* line 300, ../sass/layouts/_tablet.scss */
+  .form-text, .form-textarea {
+    padding: 0 !important;
+    width: 99% !important;
+  }
+}
 @media all and (min-width: 320px) and (max-width: 767px) {
   /* Titles */
   /* line 5, ../sass/layouts/_smartphone.scss */

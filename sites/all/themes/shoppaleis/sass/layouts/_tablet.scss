@@ -1,5 +1,5 @@
 /* Tablet in landscape */
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 1020px) and (max-width: 1024px) {
 
 	.wrapper
 	{
@@ -69,3 +69,237 @@
 }
 
 /* Tablet in portrait */
+@media all and (min-width: 768px) and (max-width: 1019px) {
+
+	/* Logo */
+	#name-and-slogan
+	{
+		width: 100%;
+		#site-name
+		{
+			text-indent: -999em;
+			overflow: hidden;
+			background: url(../images/logo_responsive.png) no-repeat center top;
+			width: 100%;
+			height: 150px;
+			a
+			{
+				display: block;
+				height: 150px;
+			}
+		}
+		margin: 20px 0;
+	
+	}
+
+	#header
+		.block
+		{
+			margin-bottom: 0;
+		}
+		.block-header
+		{
+			text-align: center;
+			text-transform: uppercase;
+			p
+			{	
+				font-family: "PT Sans Narrow";
+				font-size: 2.3em;
+				line-height: 1em;
+			}
+		}
+		.block-shoppaleis-title
+		{
+			margin-bottom: 20px;
+			.inner
+			{
+				font-size: 1.3em;
+			}
+		}
+		
+
+	#main
+	{
+		padding-top: 0!important;
+		#content
+		{
+			.region-content-center
+			{
+				h2
+				{
+					text-align: center;
+					font-size: 1.714em;
+				}
+				background: $greyLight;
+				.block-front-center
+				{
+					.text-block
+					{
+						clear: both;
+						&.text-right
+						{
+							img
+							{
+								width: 50%;
+								float: left;
+							}
+							.text
+							{
+								margin-left: 55%;
+							}
+						}
+						&.text-left
+						{
+							img
+							{
+								width: 50%;
+								float: right;
+							}
+							.text
+							{
+								margin-right: 55%;
+							}
+						}
+					}
+				}
+			}
+		.region-content-bottom
+		{
+			.block-front-bottom
+			{
+				.organisator
+				{
+					width: 100%;
+					display: inline-block;
+					margin-right: 0;
+					img
+					{
+						width: 100%;
+					}
+					.inner 
+					{
+						width: 100%;
+						.text
+						{
+							font-size: 1em;
+							line-height: 1.4em;
+						}
+										
+					}
+				}
+			}
+		}
+			
+		}
+		
+	}
+
+	/* The Menu */
+	#main-menu
+	{
+		background: $orange;
+		ul.menu
+		{
+			height: 50px;
+			line-height: 50px;
+			li
+			{
+				list-style: none;
+				display: inline-block;
+				margin-right: 2em;
+				&.last
+				{
+					margin-right: 0;
+				}
+				a
+				{
+					font-family: "PT Sans";
+					text-transform: uppercase;
+					text-decoration: none;
+					transition: all 0.1s ease;
+					border-bottom: none;
+					color: $orangeLight;
+					&:hover
+					{
+						color: white;
+						transition: all 0.1s ease;
+					}
+					&.active
+					{
+						color: white;
+					}
+					&.responsive
+					{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	/* Gallery "Voorbije edities" */
+	.view-edities
+	{
+		ul.edities
+		{
+			margin: 0;
+			padding: 0;
+			li.editie
+			{
+				margin: 0;
+				margin-bottom: 3em;
+				padding: 0;
+				list-style: none;
+				h2
+				{
+					font-size: 1.3em;
+					margin-bottom: 0;
+				}
+				h6
+				{
+					margin: 0;
+					color: $orange;
+					font-size: 0.9em;
+					font-weight: 600;
+				}
+				.views-field-field-editie-images
+				{
+					margin-top: 20px;
+					ul
+					{
+						margin: 0;
+						padding: 0;
+						li
+						{
+							margin: 0;
+							padding: 0;
+							width: 30%;
+							margin-left: 2%;
+							margin-bottom: 10px;
+							display: inline-block;
+							list-style: none;
+							img
+							{
+								width: 100%;
+							}
+							a
+							{
+								display: block;
+								border: none;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+	
+	/* Contact form */
+	.form-text, .form-textarea
+	{
+		padding: 0 !important;
+		width: 99% !important;
+	}
+
+}
