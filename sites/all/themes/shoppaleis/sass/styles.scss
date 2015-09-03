@@ -60,3 +60,23 @@ body {
 		border: none !important;
 	}
 }
+
+/* Webform Progress Bar */
+.webform-progressbar-inner,
+.webform-progressbar-page.completed,
+.webform-progressbar-page.current
+{
+	background-color: $orange;
+}
+
+/* Information webform */
+.messages
+{
+	background: $orange;
+	color: $orangeLight;
+	border: none;
+	strong
+	{
+		color: white;
+	}
+}

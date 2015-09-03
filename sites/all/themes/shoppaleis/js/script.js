@@ -96,5 +96,20 @@ Drupal.behaviors.footerHeight =
 	}
 }
 
+Drupal.behaviors.edities = 
+{
+	attach: function(context, settings)
+	{
+		$('.standhouders-edities .editie .inner').hover(function() {
+			$(this).find('.green').stop().animate({opacity: 0.95}, 500);
+			$(this).find('.text').stop().animate({opacity: 1}, 200);							
+		}, function() {
+			$(this).find('.text').stop().animate({opacity: 0});
+			$(this).find('.green').stop().animate({opacity: 0});
+		});
+	}
+}
+
+
 
 })(jQuery, Drupal, this, this.document);
