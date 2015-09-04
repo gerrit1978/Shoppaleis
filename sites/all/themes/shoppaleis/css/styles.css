@@ -1737,6 +1737,12 @@ strong {
     display: block;
     border: none;
   }
+
+  /* Messages */
+  /* line 172, ../sass/layouts/_smartphone.scss */
+  ul.messages__list {
+    padding-left: 0;
+  }
 }
 /* Component (SMACSS module) rules */
 /**
@@ -2721,6 +2727,6 @@ body {
   border: none;
 }
 /* line 79, ../sass/styles.scss */
-.messages strong, .messages--status strong, .messages--warning strong, .messages--error strong {
+.messages strong, .messages--status strong, .messages--warning strong, .messages--error strong, .messages a, .messages--status a, .messages--warning a, .messages--error a {
   color: white;
 }
