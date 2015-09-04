@@ -1774,14 +1774,24 @@ strong {
     border: none;
   }
 
+  /* Voor standhouders - edities */
+  /* line 174, ../sass/layouts/_smartphone.scss */
+  .standhouders-edities .green {
+    display: none;
+  }
+  /* line 178, ../sass/layouts/_smartphone.scss */
+  .standhouders-edities .editie {
+    margin-bottom: 40px;
+  }
+
   /* Messages */
-  /* line 172, ../sass/layouts/_smartphone.scss */
+  /* line 185, ../sass/layouts/_smartphone.scss */
   ul.messages__list {
     padding-left: 0;
   }
 
   /* Footer */
-  /* line 178, ../sass/layouts/_smartphone.scss */
+  /* line 191, ../sass/layouts/_smartphone.scss */
   .block-footer {
     text-align: center;
   }
