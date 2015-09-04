@@ -86,6 +86,7 @@ Drupal.behaviors.footerHeight =
 {
 	attach: function(context, settings)
 	{
+	
 		var viewport = $(window).height();
 		var body = $('body').height();
 		if (body < viewport)
@@ -93,6 +94,7 @@ Drupal.behaviors.footerHeight =
 			var main = viewport - 490;
 			$('#main').css('height', main);
 		}
+		
 	}
 }
 
