@@ -1743,6 +1743,12 @@ strong {
   ul.messages__list {
     padding-left: 0;
   }
+
+  /* Footer */
+  /* line 178, ../sass/layouts/_smartphone.scss */
+  .block-footer {
+    text-align: center;
+  }
 }
 /* Component (SMACSS module) rules */
 /**
