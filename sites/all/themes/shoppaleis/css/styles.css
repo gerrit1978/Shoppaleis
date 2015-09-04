@@ -1249,33 +1249,69 @@ strong {
     border: none;
   }
 
-  /* Footer */
-  /* line 362, ../sass/layouts/_desktop.scss */
+  /* (Sticky) Footer */
+  /* line 361, ../sass/layouts/_desktop.scss */
+  * {
+    margin: 0;
+  }
+
+  /* line 364, ../sass/layouts/_desktop.scss */
+  html, body {
+    height: 100%;
+  }
+
+  /* line 368, ../sass/layouts/_desktop.scss */
+  .footer-wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -75px;
+    /* the bottom margin is the negative value of the footer's height */
+  }
+
+  /* line 375, ../sass/layouts/_desktop.scss */
+  .sticky-footer, .push {
+    height: 75px;
+    /* .push must be the same height as .footer */
+    clear: both;
+  }
+
+  /* line 381, ../sass/layouts/_desktop.scss */
   #footer {
     background: #eb5a34;
+    height: 75px;
+    line-height: 75px;
     margin-top: 20px;
     color: #ffbda3;
     text-align: center;
   }
-  /* line 368, ../sass/layouts/_desktop.scss */
+  /* line 389, ../sass/layouts/_desktop.scss */
+  #footer p {
+    margin: 0;
+  }
+  /* line 393, ../sass/layouts/_desktop.scss */
+  #footer .block {
+    margin-bottom: 0;
+  }
+  /* line 397, ../sass/layouts/_desktop.scss */
   #footer a {
     color: #ffbda3;
     border-bottom-color: #ffbda3;
   }
-  /* line 372, ../sass/layouts/_desktop.scss */
+  /* line 401, ../sass/layouts/_desktop.scss */
   #footer a:hover {
     color: white;
     border-bottom-color: white;
   }
 
   /* Google Map */
-  /* line 382, ../sass/layouts/_desktop.scss */
+  /* line 411, ../sass/layouts/_desktop.scss */
   #map, #map_leuven, #map_kortenberg {
     width: 100%;
     height: 450px !important;
   }
 
-  /* line 390, ../sass/layouts/_desktop.scss */
+  /* line 419, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie {
     width: 616px;
     float: left;
@@ -1285,11 +1321,11 @@ strong {
     font-family: "PT Sans Narrow";
     text-transform: uppercase;
   }
-  /* line 399, ../sass/layouts/_desktop.scss */
+  /* line 428, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie.last {
     margin-right: 0;
   }
-  /* line 403, ../sass/layouts/_desktop.scss */
+  /* line 432, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie .inner {
     position: absolute;
     top: 0;
@@ -1297,14 +1333,14 @@ strong {
     width: 616px;
     height: 266px;
   }
-  /* line 410, ../sass/layouts/_desktop.scss */
+  /* line 439, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie .inner .green {
     background: #296065;
     width: 616px;
     height: 266px;
     opacity: 0;
   }
-  /* line 417, ../sass/layouts/_desktop.scss */
+  /* line 446, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie .inner .text {
     z-index: 10000;
     opacity: 0;
@@ -1321,12 +1357,12 @@ strong {
     font-weight: 300;
     text-transform: uppercase;
   }
-  /* line 433, ../sass/layouts/_desktop.scss */
+  /* line 462, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie .inner .text a {
     color: white;
     border-bottom-color: white;
   }
-  /* line 437, ../sass/layouts/_desktop.scss */
+  /* line 466, ../sass/layouts/_desktop.scss */
   .standhouders-edities .editie .inner .text a:hover {
     color: #eb5a34;
     border-bottom-color: #eb5a34;

@@ -357,13 +357,42 @@
 	}
 	
 	
-	/* Footer */
+	/* (Sticky) Footer */
+	* {
+		margin: 0;
+	}
+	html, body {
+		height: 100%;
+	}	
+	.footer-wrapper
+	{
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -75px; /* the bottom margin is the negative value of the footer's height */
+	}
+	
+	.sticky-footer, .push {
+		height: 75px; /* .push must be the same height as .footer */
+		clear: both;
+	}
+	
 	#footer
 	{
 		background: $orange;
+		height: 75px;
+		line-height: 75px;
 		margin-top: 20px;
 		color: $orangeLight;
 		text-align: center;
+		p
+		{
+			margin: 0;
+		}
+		.block
+		{
+			margin-bottom: 0;
+		}
 		a
 		{
 			color: $orangeLight;

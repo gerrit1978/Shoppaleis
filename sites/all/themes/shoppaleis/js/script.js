@@ -82,6 +82,7 @@ Drupal.behaviors.scrollMenu =
 	}
 }
 
+/*
 Drupal.behaviors.footerHeight = 
 {
 	attach: function(context, settings)
@@ -97,6 +98,7 @@ Drupal.behaviors.footerHeight =
 		
 	}
 }
+*/
 
 Drupal.behaviors.edities = 
 {

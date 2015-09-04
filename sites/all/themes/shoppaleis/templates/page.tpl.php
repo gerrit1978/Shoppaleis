@@ -96,8 +96,9 @@
 
   </div>
 
-  <?php print render($page['footer']); ?>
-
 </div>
-
+<div class="push"></div></div>
+<div class="sticky-footer">
+<?php print render($page['footer']); ?>
 <?php print render($page['bottom']); ?>
+</div>
