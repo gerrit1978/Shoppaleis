@@ -479,7 +479,7 @@
 		li
 		{
 			width: 600px;
-			margin-right: 50px !important;
+			margin-right: 42px !important;
 			margin-bottom: 30px !important;
 			float: left;
 			position: relative;
@@ -515,6 +515,13 @@
 					{
 						text-transform: uppercase;
 						font-size: 2em;
+					}
+				}
+				.image 
+				{
+					img
+					{
+						display: block;
 					}
 				}
 				.link
