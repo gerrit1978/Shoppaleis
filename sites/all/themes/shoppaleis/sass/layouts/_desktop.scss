@@ -479,6 +479,7 @@
 		li
 		{
 			width: 600px;
+			height: 340px !important;
 			margin-right: 42px !important;
 			margin-bottom: 30px !important;
 			float: left;
@@ -488,6 +489,10 @@
 			{
 				margin-right: 0 !important;
 			}
+			.wrapper
+			{
+				height: 340px;
+			}
 			.bg
 			{
 				background: $green;
@@ -495,7 +500,7 @@
 				left: 0;
 				top: 0;
 				width: 600px;
-				height: 346px;
+				height: 340px;
 				opacity: 1;
 				z-index: 100;
 				opacity: 0;
@@ -520,11 +525,9 @@
 				}
 				.image 
 				{
-					height: 339px !important;
+				
 					img
 					{
-						display: block !important;
-						margin: 0;
 					}
 				}
 				.link
