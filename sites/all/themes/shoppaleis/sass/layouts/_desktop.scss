@@ -473,4 +473,68 @@
 		}
 	}
 	
+	/* Standhouders */
+	.view-standhouders
+	{
+		li
+		{
+			width: 600px;
+			margin-right: 50px !important;
+			margin-bottom: 30px !important;
+			float: left;
+			position: relative;
+			&.views-row-even
+			{
+				margin-right: 0 !important;
+			}
+			.bg
+			{
+				background: $green;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 600px;
+				height: 340px;
+				opacity: 1;
+				z-index: 100;
+				opacity: 0;
+			}
+			.hidden
+			{
+				opacity: 0;
+				.text
+				{
+					position: absolute;
+					top: 20px;
+					left: 30px;
+					font-family: "PT Sans Narrow";
+					color: white;
+					z-index: 1000;
+					.name
+					{
+						text-transform: uppercase;
+						font-size: 2em;
+					}
+				}
+				.link
+				{
+					position: absolute;
+					bottom: 30px;
+					z-index: 1000;
+					left: 30px;
+					font-family: "PT Sans Narrow";
+					a
+					{
+						color: white;
+						border-bottom: 1px solid white;
+						&:hover
+						{
+							border-bottom: none;
+						}
+					} 
+				}
+			}
+		}
+	}
+
 }

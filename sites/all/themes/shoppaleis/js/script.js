@@ -82,6 +82,20 @@ Drupal.behaviors.scrollMenu =
 	}
 }
 
+Drupal.behaviors.standhouders =
+{
+	attach: function(context, settings)
+	{
+		$('.view-standhouders ul li').hover(function() {
+			$(this).find('.bg').stop().animate({opacity: 0.95}, 500);
+			$(this).find('.hidden').stop().animate({opacity: 1}, 200);
+		}, function() {
+			$(this).find('.bg').stop().animate({opacity: 0});
+			$(this).find('.hidden').stop().animate({opacity: 0});
+		});
+	}
+}
+
 /*
 Drupal.behaviors.footerHeight = 
 {

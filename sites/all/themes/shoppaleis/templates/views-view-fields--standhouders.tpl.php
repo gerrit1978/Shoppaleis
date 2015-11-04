@@ -27,7 +27,11 @@
 <div class="wrapper">
   <div class="bg">&nbsp;</div>
   <div class="image"><?php print render($row->field_field_stand_afbeelding); ?></div>
-  <div class="name"><?php print $row->node_title; ?></div>
-  <div class="text"><?php print render($row->field_body); ?></div>
-  <div class="link"><?php print render($row->field_field_stand_link); ?></div>
+  <div class="hidden">
+	  <div class="text">
+		  <div class="name"><?php print $row->node_title; ?></div>
+		  <div class="body"><?php print render($row->field_body); ?></div>
+	  </div>
+	  <div class="link"><?php print render($row->field_field_stand_link); ?></div>  
+  </div>
 </div>
