@@ -88,10 +88,10 @@ Drupal.behaviors.standhouders =
 	{
 		$('.view-standhouders ul li').hover(function() {
 			$(this).find('.bg').stop().animate({opacity: 0.95}, 500);
-			$(this).find('.hidden').stop().animate({opacity: 1}, 200);
+			$(this).find('.hidden').stop().show();
 		}, function() {
 			$(this).find('.bg').stop().animate({opacity: 0});
-			$(this).find('.hidden').stop().animate({opacity: 0});
+			$(this).find('.hidden').stop().hide();
 		});
 	}
 }
